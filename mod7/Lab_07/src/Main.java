@@ -66,5 +66,23 @@ public class Main {
             }
             System.out.println();
         }
+
+        // Extra Credit
+        System.out.println("\nPrint letter S");
+        for (int row=1; row<=11; row++)
+        {
+            for (int col=1; col<=11; col++)
+            {
+                if (row==1 || row==11/2 || row==11){
+                    System.out.print("*");
+                } else if (row<11/2 && col==1) {
+                    System.out.print("*");
+                } else if (row>11/2 && col==11){
+                    System.out.print("*");
+                } else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
     }
 }
